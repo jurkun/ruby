@@ -1,0 +1,46 @@
+/**
+ * LOGIN STYLE
+ * @author Fajar <delve_brain@hotmail.com>
+ *
+ */
+
+.switch-theme{position:absolute;z-index:2;top:0;right:0;display:block;height:30px;line-height:30px;padding:0 10px;border-radius:0 0 0 3px;text-decoration:none}
+.switch-theme:hover{text-decoration:none}
+div.overlay{position:fixed;z-index:1;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,.2)}
+ul.background li{position:fixed;z-index:-1;width:100%;height:100%;top:0;left:0;overflow:hidden;display:none}
+ul.background li img{-webkit-filter:grayscale(100%);filter:grayscale(100%);width:100%;height:100%;object-fit:cover}
+ul.background li p{position:absolute;width:100%;height:20px;line-height:20px;bottom:10px;right:0;color:#FFF;font-size:10px;text-align:center;opacity:.8}
+ul.background li p i{display:inline-block;margin-right:5px;font-size:12px;vertical-align:middle}
+.login-wrapper{position:absolute;z-index:3;width:100%;min-height:250px;top:50%;left:0;right:0;margin:-200px auto 0;padding:20px}
+	@media (min-width: 600px) {
+		.login-wrapper{width:400px}
+	}
+.login-wrapper .form-login{padding:20px;border-radius:3px;background:#FFF}
+.form-item-attribute.attr-left .form-item{padding-left:45px}
+.form-item-attribute.attr-right .form-item{padding-right:45px}
+.login-wrapper .form-login .form-item{height:40px;line-height:40px}
+.login-wrapper .form-login .form-attribute{background:0 0;font-size:18px;opacity:.3;height:38px;line-height:38px}
+.app-title{height:50px;line-height:50px;overflow:hidden;text-align:center;color:#E0115F;font-family:'Titillium Web',Helvetica,Arial,sans-serif}
+.app-title i{display:inline-block;font-size:20px}
+.app-title img{vertical-align:top;height:40px}
+
+/* Smartphones */
+@media (min-width: 300px) { }
+
+/* landscape phones */
+@media (min-width: 450px) { }
+
+/* Tablets */
+@media (min-width: 600px) { }
+
+/* Bigger tablets */
+@media (min-width: 750px) { }
+
+/* Desktop screen or landscape tablet */
+@media (min-width: 900px) { }
+
+/* Bigger desktop */
+@media (min-width: 1100px) { }
+
+/* Widescreens */
+@media (min-width: 1500px) { }

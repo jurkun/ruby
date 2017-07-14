@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RUBY Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <!-- STYLES -->
+	<link href="assets/css/reset.css" rel="stylesheet">
+	<link href="assets/css/base.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<!-- ICONS -->
+	<link href="assets/css/icons/bundle.min.css" rel="stylesheet">
+	<!-- THEME - include theme-dark.css to change ui into dark theme -->
+	<link href="assets/css/theme-light.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js" type="text/javascript"></script>
+      <script src="assets/js/respond.min.js" type="text/javascript"></script>
+    <![endif]-->
+    
+    <script src="assets/js/jquery-2.0.0.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.nicescroll.min.js" type="text/javascript"></script>
+    <script src="assets/js/tooltipsy.min.js" type="text/javascript"></script>
+
+    <!-- DEMO ONLY -->
+	<link href="assets/css/demo.css" rel="stylesheet">
+    <script src="assets/js/app/demo.js" type="text/javascript"></script>
+    <!-- DEMO ONLY -->
+</head>
+<body current-page="dashboard">
+	<header>
+		<a href="#" class="menu-toggle"><i class="icon5-navicon"></i></a>
+		<div class="logo"><h1 class="app-title"><i class="icon5-diamond"></i> RUBY <span>Admin</span></h1></div>
+		<ul class="header-nav clearfix">
+			<li><a href="#" class="hastip hastip-bottom switch-theme" title="Switch Theme" cur-theme="light"><i class="icon3-switch"></i> <span>Light</span></a></li>
+			<li><a href="#" class="icon-only"><i class="icon4-bell"></i><sup><i class="icon5-circle"></i></sup></a></li>
+			<li><a href="#"><i class="icon4-help"></i> <span>Help</span></a></li>
+			<li class="account has-child">
+				<a href="#"><h2><i class="icon4-head"></i> <span>ASEP FAJAR NUGRAHA</span></h2><i class="icon5-angle-down toggle"></i></a>
+				<ul>
+					<li><a href="#">EDIT PROFIL</a></li>
+					<li><a href="#">EDIT PASSWORD</a></li>
+					<li class="separator"></li>
+					<li><a href="login.html"><i class="icon4-power"></i> LOGOUT</a></li>
+				</ul>
+			</li>
+		</ul>
+	</header>
+	<nav>
+		<ul class="scrollbar-vertical">
+			<li class="dashboard"><a href="index.html" class="hastip hastip-right" title="DASHBOARD"><i class="icon3-home"></i> <span>DASHBOARD</span></a></li>
+			<li class="separator">STYLES</li>
+			<li class="element has-child">
+				<a href="#" class="hastip hastip-right" title="ELEMENTS"><i class="icon3-monitor"></i> <span>ELEMENTS</span> <i class="toggle icon4-plus"></i></a>
+				<ul class="scrollbar-vertical">
+					<li><a href="general.html"><i class="icon4-fast-forward"></i> General</a></li>
+					<li><a href="typography.html"><i class="icon4-fast-forward"></i> Typography</a></li>
+					<li><a href="layout.html"><i class="icon4-fast-forward"></i> Layout</a></li>
+					<li><a href="icon.html"><i class="icon4-fast-forward"></i> Icon</a></li>
+					<li><a href="notification.html"><i class="icon4-fast-forward"></i> Notification</a></li>
+					<li><a href="modal.html"><i class="icon4-fast-forward"></i> Modal</a></li>
+				</ul>
+			</li>
+			<li class="form">
+				<a href="form.html" class="hastip hastip-right" title="FORMS"><i class="icon3-write"></i> <span>FORMS</span></a>
+			</li>
+			<li class="table">
+				<a href="table.html" class="hastip hastip-right" title="TABLES"><i class="icon3-browser"></i> <span>TABLES</span></a>
+			</li>
+			<li class="separator">PLUGINS</li>
+			<li class="chart has-child">
+				<a href="#" class="hastip hastip-right" title="CHARTS"><i class="icon3-chart"></i> <span>CHARTS</span> <i class="toggle icon4-plus"></i></a>
+				<ul class="scrollbar-vertical">
+					<li><a href="chart-chartjs.html"><i class="icon4-fast-forward"></i> ChartJS Charts</a></li>
+					<li><a href="chart-morris.html"><i class="icon4-fast-forward"></i> Morris Charts</a></li>
+					<li><a href="chart-flot.html"><i class="icon4-fast-forward"></i> Flot Charts</a></li>
+					<li><a href="chart-inline.html"><i class="icon4-fast-forward"></i> Inline Charts</a></li>
+				</ul>
+			</li>
+			<li class="widget">
+				<a href="widget.html" class="hastip hastip-right" title="WIDGETS"><i class="icon3-switch"></i> <span>WIDGETS</span></a>
+			</li>
+			<li class="separator">EXAMPLES</li>
+			<li class="pages has-child">
+				<a href="#" class="hastip hastip-right" title="PAGES"><i class="icon3-windows"></i> <span>PAGES</span> <i class="toggle icon4-plus"></i></a>
+				<ul class="scrollbar-vertical">
+					<li><a href="login.html"><i class="icon4-fast-forward"></i> Login</a></li>
+					<li><a href="register.html"><i class="icon4-fast-forward"></i> Register</a></li>
+					<li><a href="lock.html"><i class="icon4-fast-forward"></i> Lock Screen</a></li>
+					<li><a href="profile.html"><i class="icon4-fast-forward"></i> Profile</a></li>
+					<li><a href="blank.html"><i class="icon4-fast-forward"></i> Blank Page</a></li>
+					<li><a href="error.html"><i class="icon4-fast-forward"></i> Error Page</a></li>
+				</ul>
+			</li>
+			<li class="menu has-child">
+				<a href="#" class="hastip hastip-right" title="MENU"><i class="icon3-folder"></i> <span>MENU</span> <i class="toggle icon4-plus"></i></a>
+				<ul class="scrollbar-vertical">
+					<li><a href="#"><i class="icon4-fast-forward"></i> Menu #1</a></li>
+					<li><a href="#"><i class="icon4-fast-forward"></i> Menu #2</a></li>
+					<li class="has-child">
+						<a href="#"><i class="icon4-fast-forward"></i> Menu #3 <i class="toggle icon4-plus"></i></a>
+						<ul>
+							<li><a href="#"><i class="icon4-fast-forward"></i> Sub-Menu #1</a></li>
+							<li><a href="#"><i class="icon4-fast-forward"></i> Sub-Menu #2</a></li>
+							<li class="has-child">
+								<a href="#"><i class="icon4-fast-forward"></i> Sub-Menu #3 <i class="toggle icon4-plus"></i></a>
+								<ul>
+									<li><a href="#"><i class="icon4-fast-forward"></i> Sub-Menu Child #1</a></li>
+									<li><a href="#"><i class="icon4-fast-forward"></i> Sub-Menu Child #2</a></li>
+									<li><a href="#"><i class="icon4-fast-forward"></i> Sub-Menu Child #3</a></li>
+								</ul>
+							</li>
+							<li><a href="#"><i class="icon4-fast-forward"></i> Sub-Menu #4</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><i class="icon4-fast-forward"></i> Menu #4</a></li>
+					<li><a href="#"><i class="icon4-fast-forward"></i> Menu #5</a></li>
+					<li><a href="#"><i class="icon4-fast-forward"></i> Menu #6</a></li>
+					<li><a href="#"><i class="icon4-fast-forward"></i> Menu #7</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<div class="page-head mbottom-10 auto">
+			<h2>DASHBOARD</h2>
+			<p class="pbottom-5">In a RGB color space, hex #e0115f (also known as <strong>Ruby</strong>) is composed of 87.8% red, 6.7% green and 37.3% blue. <a href="http://www.colorhexa.com" target="_blank" class="no-loader">http://www.colorhexa.com <i class="icon4-open"></i></a></p>
+		</div>
+		<div class="row-wrapper">
+			<div class="col-2-3">
+				<div class="box">
+					<div class="box-body pall-5">
+						<div class="slideshow-wrapper overflow-hide">
+							<div class="slideshow">
+								<div class="item">
+						            <img src="sample/slider1.png" alt="">
+						            <div class="slider-content">
+						                <h2 class="text1">Newbielabs Studio</h2>
+						                <p class="text2">Software developer based in Bandung</p>
+						            </div>
+						        </div>
+								<div class="item">
+						            <img src="sample/slider2.png" alt="">
+						            <div class="slider-content">
+						                <h2 class="text1">Asep Fajar Nugraha</h2>
+						                <p class="text2">Lelaki yang selalu salah di mata wanita</p>
+						            </div>
+						        </div>
+						    </div>
+					    </div>
+				    </div>
+				</div>
+				<div class="row-wrapper mtop-10">
+					<div class="col-2-3">
+						<div class="box">
+							<div class="box-head">
+								<h3>Progress Report</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+							<div class="box-body">
+								<form class="form form-default">
+									<div class="form-row mbottom-0">
+										<select class="form-item">
+											<option selected>Daily Graphic</option>
+											<option>Monthly Graphic</option>
+											<option>Yearly Graphic</option>
+										</select>
+									</div>
+								</form>
+								<hr class="mtop-20 mbottom-20">
+								<div class="chart" style="height: 260px;">
+									<canvas id="chart1"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-1-3">
+						<div class="box">
+							<div class="box-head">
+								<h3>Comparison Report</h3>
+								<p>Lorem ipsum dolor sit amet.</p>
+							</div>
+							<div class="box-body ptop-15">
+								<div class="chart" style="height: 100px;">
+									<canvas id="chart2"></canvas>
+								</div>
+								<ul class="data-list">
+									<li><span class="ptop-5">Chrome</span><div class="content has-label"><h5 class="text-right">700</h5></div></li>
+									<li><span class="ptop-5">IE</span><div class="content has-label"><h5 class="text-right">500</h5></div></li>
+									<li><span class="ptop-5">FireFox</span><div class="content has-label"><h5 class="text-right">400</h5></div></li>
+									<li><span class="ptop-5">Safari</span><div class="content has-label"><h5 class="text-right">600</h5></div></li>
+									<li><span class="ptop-5">Opera</span><div class="content has-label"><h5 class="text-right">300</h5></div></li>
+									<li><span class="ptop-5">Navigator</span><div class="content has-label"><h5 class="text-right">100</h5></div></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="box">
+					<div class="box-head pbottom-10">
+						<h3><i class="icon4-ribbon text-faded"></i> ACCOUNT INFORMATION</h3>
+					</div>
+					<div class="box-body ptop-5">
+						<ul class="data-list">
+							<li><span>Name</span><div class="content has-label">ASEP FAJAR NUGRAHA</div></li>
+							<li><span>Email</span><div class="content has-label">delve_brain@hotmail.com</div></li>
+							<li><span>Phone</span><div class="content has-label">081-123-456-789</div></li>
+							<li><span>Admin Level</span><div class="content has-label"><span class="label">Super Admin</span></div></li>
+						</ul>
+						<hr>
+						<div class="row-wrapper">
+							<div class="col-2">
+								<button type="button" class="button block primary"><i class="icon4-outbox"></i> UPGRADE</button>
+							</div>
+							<div class="col-2">
+								<a href="profile.html" class="button block white"><i class="icon4-head"></i> PROFILE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box mtop-20">
+					<div class="box-head">
+						<h3><i class="icon4-help text-faded"></i> CUSTOMER SUPPORT</h3>
+						<p class="ptop-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="box-body ptop-10">
+						<h5><i class="icon5-map-o text-primary pright-10"></i> Jl. Gatot Subroto, Bandung 40275</h5>
+						<hr>
+						<h5><i class="icon5-phone text-primary pright-10"></i> 022 - 73514722</h5>
+						<hr>
+						<h5><i class="icon5-envelope-o text-primary pright-10"></i> cs@mail.com</h5>
+					</div>
+				</div>
+
+				<div class="box mtop-20">
+					<div class="box-head pbottom-10">
+						<h3><i class="icon5-newspaper-o text-faded"></i> LATEST NEWS</h3>
+					</div>
+					<div class="box-body ptop-5 pbottom-10">
+						<ul class="data-list">
+							<li><div class="content"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></div></li>
+							<li><div class="content"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></div></li>
+							<li><div class="content"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></div></li>
+							<li><div class="content"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></div></li>
+							<li><div class="content"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></div></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="copyright">Copyrights &copy; 2017 - RUBY Admin. All Rights Reserved.</div>
+		<div class="disclaimer">Designated trademarks and brands are the property of their respective owners. Created by <a href="https://fajarport.com" target="_blank" class="no-loader">Asep Fajar Nugraha</a>.</div>
+	</footer>
+    <a class="ajax no-loader scrolltop"><i class="icon5-chevron-up"></i></a>
+    <script src="assets/js/app/base.js" type="text/javascript"></script>
+    <script src="assets/js/app/script.js" type="text/javascript"></script>
+
+	<!-- SLIDESHOW -->
+	<link href="assets/js/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+	<script src="assets/js/owlcarousel/owl.carousel.min.js" type="text/javascript"></script>
+	<!-- CHART -->
+	<script src="assets/js/chartjs/Chart.min.js"></script>
+	
+	<script type="text/javascript">
+		$(function() {
+		    $('.slideshow').owlCarousel({
+		        items:1,
+		        loop:true,
+		        nav:true,
+		        dots:false,
+		        autoplay:true,
+		        autoplayTimeout:5000,
+		        autoplayHoverPause:false,
+		        smartSpeed:450,
+		    });
+
+		    initChart();
+    	});
+
+		function initChart()
+		{
+			// AREA CHART
+			var chart1Options = {
+				showScale: true,
+				scaleShowGridLines: true,
+				scaleGridLineColor: "rgba(0,0,0,.05)",
+				scaleGridLineWidth: 1,
+				scaleShowHorizontalLines: true,
+				scaleShowVerticalLines: true,
+				bezierCurve: true,
+				bezierCurveTension: 0.2,
+				pointDot: true,
+				pointDotRadius: 4,
+				pointDotStrokeWidth: 1,
+				pointHitDetectionRadius: 20,
+				datasetStroke: true,
+				datasetStrokeWidth: 2,
+				datasetFill: false,
+				legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].lineColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
+				maintainAspectRatio: false,
+				responsive: true
+			};
+
+			var chart1Data = {
+				labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+				datasets: [
+					{
+						label: "Data",
+						fillColor: "rgba(224,17,95,.5)",
+						strokeColor: "rgba(224,17,95,.5)",
+						pointColor: "#E0115F",
+						pointStrokeColor: "#E0115F",
+						pointHighlightFill: "#111",
+						pointHighlightStroke: "#111",
+						data: [65, 59, 80, 81, 56, 55, 45]
+					}
+				]
+			};
+
+			var chart1Canvas = $("#chart1").get(0).getContext("2d");
+			var chart1 = new Chart(chart1Canvas);
+			chart1.Line(chart1Data, chart1Options);
+
+			// PIE/DONUT CHART
+			// Get context with jQuery - using jQuery's .get() method.
+			var chart2Data = [
+				{
+					value: 700,
+					color: "#f56954",
+					highlight: "#f56954",
+					label: "Chrome"
+				},
+				{
+					value: 500,
+					color: "#00a65a",
+					highlight: "#00a65a",
+					label: "IE"
+				},
+				{
+					value: 400,
+					color: "#f39c12",
+					highlight: "#f39c12",
+					label: "FireFox"
+				},
+				{
+					value: 600,
+					color: "#00c0ef",
+					highlight: "#00c0ef",
+					label: "Safari"
+				},
+				{
+					value: 300,
+					color: "#3c8dbc",
+					highlight: "#3c8dbc",
+					label: "Opera"
+				},
+				{
+					value: 100,
+					color: "#d2d6de",
+					highlight: "#d2d6de",
+					label: "Navigator"
+				}
+			];
+			var chart2Options = {
+				//Boolean - Whether we should show a stroke on each segment
+				segmentShowStroke: true,
+				//String - The colour of each segment stroke
+				segmentStrokeColor: "#fff",
+				//Number - The width of each segment stroke
+				segmentStrokeWidth: 2,
+				//Number - The percentage of the chart that we cut out of the middle
+				percentageInnerCutout: 50, // This is 0 for Pie charts
+				//Number - Amount of animation steps
+				animationSteps: 100,
+				//String - Animation easing effect
+				animationEasing: "easeOutBounce",
+				//Boolean - Whether we animate the rotation of the Doughnut
+				animateRotate: true,
+				//Boolean - Whether we animate scaling the Doughnut from the centre
+				animateScale: false,
+				//Boolean - whether to make the chart responsive to window resizing
+				responsive: true,
+				// Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+				maintainAspectRatio: true,
+				//String - A legend template
+				legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+			};
+			//Create pie or doughnut chart
+			// You can switch between pie and doughnut using the method below.
+			var chart2Canvas = $("#chart2").get(0).getContext("2d");
+			var chart2 = new Chart(chart2Canvas);
+			chart2.Doughnut(chart2Data, chart2Options);
+		}
+	</script>
+</body>
+</html>

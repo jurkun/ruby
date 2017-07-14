@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RUBY Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <!-- STYLES -->
+	<link href="assets/css/reset.css" rel="stylesheet">
+	<link href="assets/css/base.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/login.css" rel="stylesheet">
+	<!-- ICONS -->
+	<link href="assets/css/icons/bundle.min.css" rel="stylesheet">
+	<!-- THEME - include theme-dark.css to change ui into dark theme -->
+	<link href="assets/css/theme-light.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js" type="text/javascript"></script>
+      <script src="assets/js/respond.min.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <script src="assets/js/jquery-2.0.0.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.nicescroll.min.js" type="text/javascript"></script>
+    <script src="assets/js/tooltipsy.min.js" type="text/javascript"></script>
+
+	<link href="assets/js/icheck/icheck.css" rel="stylesheet">
+    <script src="assets/js/icheck/icheck.min.js" type="text/javascript"></script>
+</head>
+<body class="login-page">
+	<a href="#" class="hastip hastip-bottom has-padding filled switch-theme" title="Switch Theme" cur-theme="light"><i class="icon3-switch"></i> <span>Light</span></a>
+	<div class="overlay"></div>
+	<ul class="background">
+		<li id="bg-0">
+			<img src="sample/bg1.jpg" alt="">
+			<p><i class="icon3-image"></i> pexels.com</p>
+		</li>
+		<li id="bg-1">
+			<img src="sample/bg2.jpg" alt="">
+			<p><i class="icon3-image"></i> pexels.com</p>
+		</li>
+	</ul>
+	<div class="login-wrapper">
+		<form action="index.html" class="form form-default form-login">
+			<div class="form-row">
+				<div class="form-item-attribute attr-left attr-icon">
+					<input type="text" class="form-item" placeholder="Username">
+					<div class="form-attribute"><i class="icon2-user"></i></div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-item-attribute attr-left attr-icon">
+					<input type="password" class="form-item" placeholder="Password">
+					<div class="form-attribute"><i class="icon2-key"></i></div>
+				</div>
+			</div>
+			<div class="row-wrapper mtop-10">
+				<div class="col-2">
+					<div class="form-row">
+						<ul class="form-item-group checkbox">
+							<li><input type="checkbox" value="1" class="form-item-icheck" id="checkbox-1"><label for="checkbox-1">Remember Me</label></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="ptop-10 text-right"><a href="#">Forgot Password?</a></div>
+				</div>
+			</div>
+			<hr>
+			<button class="button primary large block text-uppercase">LOGIN</button>
+			<hr>
+			<a href="register.html" class="button block">REGISTER</a>
+		</form>
+		<h1 class="app-title"><i class="icon5-diamond"></i> RUBY <span>Admin</span></h1>
+	</div>
+    <script src="assets/js/app/base.js" type="text/javascript"></script>
+    <script src="assets/js/app/script.js" type="text/javascript"></script>
+
+	<!-- DEMO ONLY -->
+	<link href="assets/css/demo.css" rel="stylesheet">
+    <script src="assets/js/app/demo.js" type="text/javascript"></script>
+    <!-- DEMO ONLY -->
+    <script type="text/javascript">
+    	$(function() {
+			showBg(0);
+		});
+		function showBg(index)
+		{
+			if (index == 0)
+			{
+				$('ul.background li#bg-' + index).fadeIn(1000, function(){
+					$('ul.background li#bg-' + ($('ul.background li').length - 1)).fadeOut();
+				});
+			}
+			else
+			{
+				$('ul.background li#bg-' + index).fadeIn(1000, function(){
+					$('ul.background li#bg-' + (index - 1)).fadeOut();
+				});
+			}
+
+			if ((index) == ($('ul.background li').length - 1))
+			{
+				setTimeout(function(){showBg(0);}, 5000);
+			}
+			else
+			{
+				setTimeout(function(){showBg(index+1);}, 5000);
+			}
+		}
+    </script>
+</body>
+</html>

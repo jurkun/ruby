@@ -1,0 +1,46 @@
+/**
+ * LOCK STYLE
+ * @author Fajar <delve_brain@hotmail.com>
+ *
+ */
+
+.switch-theme{position:absolute;z-index:2;top:0;right:0;display:block;height:30px;line-height:30px;padding:0 10px;border-radius:0 0 0 3px;text-decoration:none}
+.switch-theme:hover{text-decoration:none}
+.lock-wrapper{position:absolute;z-index:2;width:100%;min-height:200px;top:50%;left:0;right:0;margin:-120px auto 0;padding:20px 20px 20px 40px}
+	@media (min-width: 600px) {
+		.lock-wrapper{width:400px}
+	}
+.lock-wrapper .form-lock{position:relative;padding:10px;height:80px;border-radius:3px;background:#FFF}
+.lock-wrapper .form-lock .avatar{position:absolute;top:-20px;left:-20px;width:120px;height:120px;padding:10px;border-radius:50%;background:#FFF}
+.lock-wrapper .form-lock .avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+.lock-wrapper .form-lock .form-row{padding-left:100px}
+.form-item-attribute.attr-left .form-item{padding-left:35px}
+.form-item-attribute.attr-right .form-item{padding-right:35px}
+.lock-wrapper .form-lock .form-item{height:40px;line-height:40px}
+.lock-wrapper .form-lock .form-attribute{background:0 0;font-size:18px;height:38px;line-height:38px}
+.lock-wrapper .form-lock .form-item-attribute.attr-button .form-attribute button{height:40px;line-height:40px}
+.lock-wrapper .form-lock .form-item-attribute.attr-button .form-attribute button i{display:block;font-size:18px}
+.app-title{height:50px;line-height:50px;overflow:hidden;color:#E0115F;font-family:'Titillium Web',Helvetica,Arial,sans-serif;text-align:right;padding-right:10px}
+.app-title i{display:inline-block;font-size:20px}
+.app-title img{vertical-align:top;height:40px}
+
+/* Smartphones */
+@media (min-width: 300px) { }
+
+/* landscape phones */
+@media (min-width: 450px) { }
+
+/* Tablets */
+@media (min-width: 600px) { }
+
+/* Bigger tablets */
+@media (min-width: 750px) { }
+
+/* Desktop screen or landscape tablet */
+@media (min-width: 900px) { }
+
+/* Bigger desktop */
+@media (min-width: 1100px) { }
+
+/* Widescreens */
+@media (min-width: 1500px) { }

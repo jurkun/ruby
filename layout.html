@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RUBY Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+	<!-- STYLES -->
+	<link href="assets/css/reset.css" rel="stylesheet">
+	<link href="assets/css/base.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<!-- ICONS -->
+	<link href="assets/css/icons/bundle.min.css" rel="stylesheet">
+	<!-- THEME - include theme-dark.css to change ui into dark theme -->
+	<link href="assets/css/theme-light.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js" type="text/javascript"></script>
+      <script src="assets/js/respond.min.js" type="text/javascript"></script>
+    <![endif]-->
+    
+    <script src="assets/js/jquery-2.0.0.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.nicescroll.min.js" type="text/javascript"></script>
+    <script src="assets/js/tooltipsy.min.js" type="text/javascript"></script>
+
+    <!-- DEMO ONLY -->
+	<link href="assets/css/demo.css" rel="stylesheet">
+    <script src="assets/js/app/demo.js" type="text/javascript"></script>
+    <!-- DEMO ONLY -->
+</head>
+<body current-page="element">
+	<header>
+		<a href="#" class="menu-toggle"><i class="icon5-navicon"></i></a>
+		<div class="logo"><h1 class="app-title"><i class="icon5-diamond"></i> RUBY <span>Admin</span></h1></div>
+		<ul class="header-nav clearfix">
+			<li><a href="#" class="hastip hastip-bottom switch-theme" title="Switch Theme" cur-theme="light"><i class="icon3-switch"></i> <span>Light</span></a></li>
+			<li><a href="#" class="icon-only"><i class="icon4-bell"></i><sup><i class="icon5-circle"></i></sup></a></li>
+			<li><a href="#"><i class="icon4-help"></i> <span>Help</span></a></li>
+			<li class="account has-child">
+				<a href="#"><h2><i class="icon4-head"></i> <span>ASEP FAJAR NUGRAHA</span></h2><i class="icon5-angle-down toggle"></i></a>
+				<ul>
+					<li><a href="#">EDIT PROFIL</a></li>
+					<li><a href="#">EDIT PASSWORD</a></li>
+					<li class="separator"></li>
+					<li><a href="login.html"><i class="icon4-power"></i> LOGOUT</a></li>
+				</ul>
+			</li>
+		</ul>
+	</header>
+	<nav>
+		<ul class="scrollbar-vertical">
+			<li class="dashboard"><a href="index.html" class="hastip hastip-right" title="DASHBOARD"><i class="icon3-home"></i> <span>DASHBOARD</span></a></li>
+			<li class="separator">STYLES</li>
+			<li class="element has-child">
+				<a href="#" class="hastip hastip-right" title="ELEMENTS"><i class="icon3-monitor"></i> <span>ELEMENTS</span> <i class="toggle icon4-plus"></i></a>
+				<ul class="scrollbar-vertical">
+					<li><a href="general.html"><i class="icon4-fast-forward"></i> General</a></li>
+					<li><a href="typography.html"><i class="icon4-fast-forward"></i> Typography</a></li>
+					<li><a href="layout.html"><i class="icon4-fast-forward"></i> Layout</a></li>
+					<li><a href="icon.html"><i class="icon4-fast-forward"></i> Icon</a></li>
+					<li><a href="notification.html"><i class="icon4-fast-forward"></i> Notification</a></li>
+					<li><a href="modal.html"><i class="icon4-fast-forward"></i> Modal</a></li>
+				</ul>
+			</li>
+			<li class="form">
+				<a href="form.html" class="hastip hastip-right" title="FORMS"><i class="icon3-write"></i> <span>FORMS</span></a>
+			</li>
+			<li class="table">
+				<a href="table.html" class="hastip hastip-right" title="TABLES"><i class="icon3-browser"></i> <span>TABLES</span></a>
+			</li>
+			<li class="separator">PLUGINS</li>
+			<li class="chart has-child">
+				<a href="#" class="hastip hastip-right" title="CHARTS"><i class="icon3-chart"></i> <span>CHARTS</span> <i class="toggle icon4-plus"></i></a>
+				<ul class="scrollbar-vertical">
+					<li><a href="chart-chartjs.html"><i class="icon4-fast-forward"></i> ChartJS Charts</a></li>
+					<li><a href="chart-morris.html"><i class="icon4-fast-forward"></i> Morris Charts</a></li>
+					<li><a href="chart-flot.html"><i class="icon4-fast-forward"></i> Flot Charts</a></li>
+					<li><a href="chart-inline.html"><i class="icon4-fast-forward"></i> Inline Charts</a></li>
+				</ul>
+			</li>
+			<li class="widget">
+				<a href="widget.html" class="hastip hastip-right" title="WIDGETS"><i class="icon3-switch"></i> <span>WIDGETS</span></a>
+			</li>
+			<li class="separator">EXAMPLES</li>
+			<li class="pages has-child">
+				<a href="#" class="hastip hastip-right" title="PAGES"><i class="icon3-windows"></i> <span>PAGES</span> <i class="toggle icon4-plus"></i></a>
+				<ul class="scrollbar-vertical">
+					<li><a href="login.html"><i class="icon4-fast-forward"></i> Login</a></li>
+					<li><a href="register.html"><i class="icon4-fast-forward"></i> Register</a></li>
+					<li><a href="lock.html"><i class="icon4-fast-forward"></i> Lock Screen</a></li>
+					<li><a href="profile.html"><i class="icon4-fast-forward"></i> Profile</a></li>
+					<li><a href="blank.html"><i class="icon4-fast-forward"></i> Blank Page</a></li>
+					<li><a href="error.html"><i class="icon4-fast-forward"></i> Error Page</a></li>
+				</ul>
+			</li>
+			<li class="menu has-child">
+				<a href="#" class="hastip hastip-right" title="MENU"><i class="icon3-folder"></i> <span>MENU</span> <i class="toggle icon4-plus"></i></a>
+				<ul class="scrollbar-vertical">
+					<li><a href="#"><i class="icon4-fast-forward"></i> Menu #1</a></li>
+					<li><a href="#"><i class="icon4-fast-forward"></i> Menu #2</a></li>
+					<li class="has-child">
+						<a href="#"><i class="icon4-fast-forward"></i> Menu #3 <i class="toggle icon4-plus"></i></a>
+						<ul>
+							<li><a href="#"><i class="icon4-fast-forward"></i> Sub-Menu #1</a></li>
+							<li><a href="#"><i class="icon4-fast-forward"></i> Sub-Menu #2</a></li>
+							<li class="has-child">
+								<a href="#"><i class="icon4-fast-forward"></i> Sub-Menu #3 <i class="toggle icon4-plus"></i></a>
+								<ul>
+									<li><a href="#"><i class="icon4-fast-forward"></i> Sub-Menu Child #1</a></li>
+									<li><a href="#"><i class="icon4-fast-forward"></i> Sub-Menu Child #2</a></li>
+									<li><a href="#"><i class="icon4-fast-forward"></i> Sub-Menu Child #3</a></li>
+								</ul>
+							</li>
+							<li><a href="#"><i class="icon4-fast-forward"></i> Sub-Menu #4</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><i class="icon4-fast-forward"></i> Menu #4</a></li>
+					<li><a href="#"><i class="icon4-fast-forward"></i> Menu #5</a></li>
+					<li><a href="#"><i class="icon4-fast-forward"></i> Menu #6</a></li>
+					<li><a href="#"><i class="icon4-fast-forward"></i> Menu #7</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<div class="page-head mbottom-20">
+			<h2>Layout</h2>
+			<p>Sample styles for layouts.</p>
+		</div>
+		<div class="box">
+			<div class="box-head">
+				<h4><sup class="text-primary">1</sup> Grid / Wrapper <code>.row-wrapper</code></h4>
+				<p>&mdash; Just simple based grid/wrapper. Start work on min-width: 450px. <strong>3 based columns</strong> will work on min-width: 600px. <strong>4 based columns</strong> will work on min-width: 750px.</p>
+			</div>
+			<div class="box-body">
+				<div class="wrapper">
+					<h5>SINGLE</h5>
+					<div class="row-wrapper">
+						<div class="col-1">
+							<div class="filled text-center pall-10"><code>.col-1</code></div>
+						</div>
+					</div>
+					<div class="row-wrapper">
+						<div class="col-2">
+							<div class="filled text-center pall-10"><code>.col-2</code></div>
+						</div>
+						<div class="col-2">
+							<div class="filled text-center pall-10"><code>.col-2</code></div>
+						</div>
+					</div>
+					<div class="row-wrapper">
+						<div class="col-3">
+							<div class="filled text-center pall-10"><code>.col-3</code></div>
+						</div>
+						<div class="col-3">
+							<div class="filled text-center pall-10"><code>.col-3</code></div>
+						</div>
+						<div class="col-3">
+							<div class="filled text-center pall-10"><code>.col-3</code></div>
+						</div>
+					</div>
+					<div class="row-wrapper">
+						<div class="col-4">
+							<div class="filled text-center pall-10"><code>.col-4</code></div>
+						</div>
+						<div class="col-4">
+							<div class="filled text-center pall-10"><code>.col-4</code></div>
+						</div>
+						<div class="col-4">
+							<div class="filled text-center pall-10"><code>.col-4</code></div>
+						</div>
+						<div class="col-4">
+							<div class="filled text-center pall-10"><code>.col-4</code></div>
+						</div>
+					</div>
+					<hr>
+					<div class="row-wrapper">
+						<div class="col-1-3">
+							<div class="filled text-center pall-10"><code>.col-1-3</code></div>
+						</div>
+						<div class="col-2-3">
+							<div class="filled text-center pall-10"><code>.col-2-3</code></div>
+						</div>
+					</div>
+					<div class="row-wrapper">
+						<div class="col-1-4">
+							<div class="filled text-center pall-10"><code>.col-1-4</code></div>
+						</div>
+						<div class="col-3-4">
+							<div class="filled text-center pall-10"><code>.col-3-4</code></div>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="wrapper">
+					<h5>MULTIPLE</h5>
+					<div class="row-wrapper">
+						<div class="col-2">
+							<div class="filled text-center pall-10"><code>.col-2</code></div>
+							<div class="row-wrapper mtop-10 bordered">
+								<div class="col-2">
+									<div class="filled text-center pall-10"><code>.col-2</code></div>
+								</div>
+								<div class="col-2">
+									<div class="filled text-center pall-10"><code>.col-2</code></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-2">
+							<div class="filled text-center pall-10"><code>.col-2</code></div>
+							<div class="row-wrapper mtop-10 bordered">
+								<div class="col-2">
+									<div class="filled text-center pall-10"><code>.col-2</code></div>
+								</div>
+								<div class="col-2">
+									<div class="filled text-center pall-10"><code>.col-2</code></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row-wrapper mtop-20">
+						<div class="col-1-3">
+							<div class="filled text-center pall-10"><code>.col-1-3</code></div>
+							<div class="row-wrapper mtop-10 bordered">
+								<div class="col-2">
+									<div class="filled text-center pall-10"><code>.col-2</code></div>
+								</div>
+								<div class="col-2">
+									<div class="filled text-center pall-10"><code>.col-2</code></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-2-3">
+							<div class="filled text-center pall-10"><code>.col-2-3</code></div>
+							<div class="row-wrapper mtop-10 bordered">
+								<div class="col-3">
+									<div class="filled text-center pall-10"><code>.col-3</code></div>
+								</div>
+								<div class="col-3">
+									<div class="filled text-center pall-10"><code>.col-3</code></div>
+								</div>
+								<div class="col-3">
+									<div class="filled text-center pall-10"><code>.col-3</code></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="box mtop-20">
+			<div class="box-head">
+				<h3><sup class="text-primary">2</sup> Placement</h3>
+				<p>&mdash; Using for placement content.</p>
+			</div>
+			<div class="box-body phor-20">
+				<div class="content-wrapper mtop-10">
+					<div class="row-wrapper">
+						<div class="col-2">
+							<p class="mbottom-10">
+								<strong><sup class="text-primary">&bull;</sup> Margin</strong>
+								<small>Availability (5px, 10px, 15px, 20px, 25px, 30px, 50px, 100px).</small>
+							</p>
+							<p>Margin Top <code>.mtop-5</code> - <code>.mtop-100</code></p>
+							<p>Margin Bottom <code>.mbottom-5</code> - <code>.mbottom-100</code></p>
+							<p>Margin Left <code>.mleft-5</code> - <code>.mleft-100</code></p>
+							<p>Margin Right <code>.mright-5</code> - <code>.mright-100</code></p>
+							<p>Margin Horizontal (Left-Right) <code>.mhor-5</code> - <code>.mhor-100</code></p>
+							<p>Margin Vertical (Top-Bottom) <code>.mver-5</code> - <code>.mver-100</code></p>
+							<p>Margin All <code>.mall-5</code> - <code>.mall-100</code></p>
+						</div>
+						<div class="col-2">
+							<p class="mbottom-10">
+								<strong><sup class="text-primary">&bull;</sup> Padding</strong>
+								<small>Availability (5px, 10px, 15px, 20px, 25px, 30px, 50px, 100px).</small>
+							</p>
+							<p>Padding Top <code>.ptop-5</code> - <code>.ptop-100</code></p>
+							<p>Padding Bottom <code>.pbottom-5</code> - <code>.pbottom-100</code></p>
+							<p>Padding Left <code>.pleft-5</code> - <code>.pleft-100</code></p>
+							<p>Padding Right <code>.pright-5</code> - <code>.pright-100</code></p>
+							<p>Padding Horizontal (Left-Right) <code>.phor-5</code> - <code>.phor-100</code></p>
+							<p>Padding Vertical (Top-Bottom) <code>.pver-5</code> - <code>.pver-100</code></p>
+							<p>Padding All <code>.pall-5</code> - <code>.pmall-100</code></p>
+						</div>
+					</div>
+					<hr>
+					<div class="row-wrapper">
+						<div class="col-2">
+							<p class="mbottom-10">
+								<strong><sup class="text-primary">&bull;</sup> Floating</strong>
+								<small></small>
+							</p>
+							<p class="float-left filled pall-10">Float Left <code>.float-left</code></p>
+							<p class="float-right filled pall-10">Float Right <code>.float-right</code></p>
+							<div class="clear"></div>
+							<p><strong><sup class="text-primary">&bull;</sup> Clear / Normalize Floating</strong></p>
+							<p>Place on the wrapper's class tag <code>.clearfix</code> or on the tag inside wrapper <code>.clear</code></p>
+						</div>
+						<div class="col-2">
+							<p class="mbottom-10">
+								<strong><sup class="text-primary">&bull;</sup> Text Posision</strong>
+							</p>
+							<p class="text-center filled pall-10">Text Center <code>.text-center</code></p>
+							<p class="text-left filled pall-10">Text Left <code>.text-left</code></p>
+							<p class="text-right filled pall-10">Text Right <code>.text-right</code></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="copyright">Copyrights &copy; 2017 - RUBY Admin. All Rights Reserved.</div>
+		<div class="disclaimer">Designated trademarks and brands are the property of their respective owners. Created by <a href="https://fajarport.com" target="_blank" class="no-loader">Asep Fajar Nugraha</a>.</div>
+	</footer>
+    <a class="ajax no-loader scrolltop"><i class="icon5-chevron-up"></i></a>
+    <script src="assets/js/app/base.js" type="text/javascript"></script>
+    <script src="assets/js/app/script.js" type="text/javascript"></script>
+</body>
+</html>

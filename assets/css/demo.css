@@ -1,0 +1,11 @@
+/**
+ * DEMO STYLE
+ * @author Fajar <delve_brain@hotmail.com>
+ *
+ */
+
+.switch-theme[cur-theme="light"] i {
+	-ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

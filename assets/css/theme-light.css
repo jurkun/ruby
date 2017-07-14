@@ -1,0 +1,109 @@
+/**
+ * LIGHT STYLE
+ * @author Fajar <delve_brain@hotmail.com>
+ *
+ */
+
+body{background:#F5F5F5;color:#222}
+hr{border-color: #DDD}
+code {background:#DDD}
+.filled {background:#DDD}
+.bordered, .bordered-left, .bordered-right, .bordered-top, .bordered-bottom {border-color: #DDD}
+
+.table-wrapper{background:#FFF}
+.table-default{background:#FFF}
+.table-default td,.table-default th{border:1px solid #EEE}
+.table-default th{background:#F5F5F5}
+.table-default tr:nth-child(odd){background:#FFF}
+.table-default tr:nth-child(even){background:#FAFAFA}
+.table-default .filter-item{border:1px solid #EEE;background:#F5F5F5;color:#333}
+.table-default .filter-item:focus{background:#FFF}
+
+body>header{background:#D5D5D5;color:#666;box-shadow:0 1px 1px #999}
+body>header a{color:#333}
+header .menu-toggle{background:#EEE;color:#666}
+body.toggle>header .menu-toggle,header .menu-toggle:hover{background:#DDD;color:#E0115F}
+header .header-nav{background:#EEE}
+header .header-nav>li{border-right-color:#CCC}
+header .header-nav>li.active,header .header-nav>li:hover{background:#DDD}
+header .header-nav>li>a{color:#666}
+header .header-nav>li>a:hover{color:#222}
+header .header-nav>li.account .toggle{background:#DDD}
+header .header-nav>li.has-child ul{background:#DDD}
+header .header-nav>li.has-child.active .toggle{background:#CCC}
+header .header-nav>li.has-child ul li.separator{background:#CCC}
+header .header-nav>li.has-child ul li a:hover{background:#EEE}
+
+nav{background:#F9F9F9;box-shadow:0 1px 2px #CCC}
+nav>ul li.separator{color:#999}
+nav>ul>li{border-bottom:1px solid #EEE}
+nav>ul>li>a{background:#F9F9F9;color:#666}
+nav>ul>li>a:hover{background:#FFF;color:#111}
+nav>ul>li.active>a{background:#FFF}
+nav>ul>li>a i.toggle{color:#999}
+nav>ul>li.has-child.open{border-bottom:1px solid #EEE}
+nav>ul>li>ul{background:#FFF;box-shadow: 0 1px 1px #CCC}
+nav>ul>li>ul>li>a{color:#666}
+nav>ul>li>ul li>a i.toggle{color:#666}
+nav>ul>li>ul li ul li a{color:#666}
+nav>ul>li>ul li ul li a:hover{color:#111}
+
+.page-head{background:#EEE}
+.page-head>i{background:#EEE}
+
+.scrolltop{background:#FFF;box-shadow:0 1px 1px #DDD}
+
+.toggle-item{background:#F5F5F5}
+.toggle-item li.separator{background:#EEE}
+
+.tab-nav{background:#FFF;border-bottom:1px solid #EEE}
+.tab-nav li a{border-color:#EEE}
+.tab-nav li a.active{background:#F5F5F5}
+	@media (min-width: 600px) {
+		.tab-nav li a{color:#333}
+	}
+
+.data-list li{padding:10px 0;border-bottom:1px solid #EEE}
+.icon-list,.icon-list li{border-color: #EEE}
+
+.paging-wrapper .paging-list li{color:#222}
+.paging-wrapper .paging-list li a{background:#EEE;color:#222}
+
+.box{background:#FFF}
+.box.has-shadow{box-shadow:0 1px 1px #DDD}
+.box-head{border-color:#DDD}
+.box-head .action{border-top:1px solid #EEE;background:#FFF}
+.box hr{border-color:#EEE}
+
+.progress{background:#DDD}
+.progress span{background:#CCC}
+
+.accordion li>a{background:#EEE}
+.accordion li .accordion-content{border-color:#EEE}
+
+.form .form-item{border:1px solid #EEE;background:#F5F5F5;color:#222}
+.form .form-item:focus{background:#FFF}
+
+.lock-wrapper .form-lock,.lock-wrapper .form-lock .avatar,.login-wrapper .form-login,.register-wrapper .form-register{background:#FFF}
+
+/* OTHERS */
+/* SELECT2 */
+.select2-dropdown{background-color:#DDD!important;border:1px solid #DDD!important}.select2-close-mask{background-color:#EEE!important}.select2-results__message{color:#666!important},.select2-container--default .select2-selection--single,.select2-container--default .select2-selection--multiple{background-color:#EEE!important;border:1px solid #EEE!important}.select2-container--default .select2-selection--multiple .select2-selection__choice,.select2-container--default.select2-container--disabled .select2-selection--multiple,.select2-container--default.select2-container--disabled .select2-selection--single{background-color:#DDD!important;border:1px solid #DDD!important}.select2-container--default .select2-selection--multiple .select2-selection__choice{border:1px solid #DDD!important}.select2-container--default .select2-search--inline .select2-search__field{color:#333!important}.select2-container--default .select2-search--dropdown .select2-search__field{background-color:#EEE!important;border:1px solid #EEE!important;color:#333!important}.select2-container--default .select2-selection--single .select2-selection__rendered{color:#333!important},.select2-container--default .select2-selection--single .select2-selection__placeholder,.select2-container--default .select2-selection--multiple .select2-selection__placeholder{color:#CCC!important},.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__rendered,.select2-container--default.select2-container--disabled .select2-selection--multiple .select2-selection__rendered{color:#BBB!important}.select2-container--default .select2-results__option[aria-selected=true]{background-color:#CCC!important}.select2-container--default .select2-results__option[aria-disabled=true]{color:#666!important}
+
+/* JQUERY-UI */
+.ui-slider.ui-widget-content,.ui-spinner.ui-widget-content{background:#CCC!important;border:none!important}.ui-slider .ui-slider-handle{background:#222!important;border:1px solid #222!important}.ui-spinner a.ui-spinner-button{background:#EEE!important;border:1px solid #EEE!important}.ui-button,.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default,html .ui-button.ui-state-disabled:active,html .ui-button.ui-state-disabled:hover{background:#EEE!important;border:1px solid #EEE!important;color:#222!important}
+
+/* SCHEDULE LIST */
+.schedule-list>li{border-bottom:1px solid #EEE}
+.schedule-list>li.item-list:hover{background:#F9F9F9}
+.schedule-list .preview .schedule li{border-right: 1px solid #EEE}
+.schedule-list>li>.detail{border-top:1px solid #EEE}
+.schedule-list>li>.detail .route>li{border-left:1px solid #EEE}
+.schedule-list>li>.detail .route>li>div.icon{background:#FFF}
+.schedule-list>li>.detail .class>li.active,.schedule-list>li>.detail .route>li.active{border:1px dashed #DDD;background:#FAFAFA}
+.schedule-list>li>.detail .class>li{border-bottom:1px solid #EEE}
+
+/* THUMB LIST */
+.thumb-list li>a{color:#222}
+.thumb-list li>a:hover{background:#F9F9F9}
+.thumb-list li .thumb{background:#EEE}
