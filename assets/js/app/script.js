@@ -132,7 +132,7 @@ $(function() {
         $('nav li.' + $('body').attr('current-page')).addClass('active');
     }
 
-	$('nav > ul li.has-child a').click(function(e) {
+	$('nav li.has-child > a').click(function(e) {
 		e.preventDefault();
 
         if ($(this).parent().hasClass('active') && $(this).parent().hasClass('open'))
