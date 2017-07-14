@@ -21,7 +21,7 @@ $(function() {
         if ($(this).hasClass('ajax')) event.preventDefault();
 
         // Auto Loader
-        if ((is_hash == false) && ( ! $(this).hasClass('no-loader'))) baseapp.openLoader();
+        if ((is_hash == false) && ( ! $(this).hasClass('no-loader'))) openLoader();
     });
     // END: Override a tag
 
