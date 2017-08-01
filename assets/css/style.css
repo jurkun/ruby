@@ -516,12 +516,12 @@ body.scrolled .scrolltop:hover{opacity:1}
 	display: block;
 	height: 50px;
 	line-height: 50px;
-	background: #FFF;
-	border-bottom: 2px solid;
-	border-color: #FFF;
 	font-family:'Titillium Web',Helvetica,Arial,sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;
+	background: #FFF;
+	border-bottom: 2px solid;
+	border-color: #FFF;
 	color: #222;
 
 }

@@ -107,3 +107,17 @@ nav>ul>li>ul li ul li a:hover{color:#111}
 .thumb-list li>a{color:#222}
 .thumb-list li>a:hover{background:#F9F9F9}
 .thumb-list li .thumb{background:#EEE}
+
+/* PROFILE */
+.box-profile .profile-head .thumb {
+	background: #FFF;
+}
+.box-profile .profile-desc .nav li a {
+	background: #FFF;
+	border-color: #FFF;
+	color: #222;
+}
+.box-profile .profile-desc .nav li a.active,
+.box-profile .profile-desc .nav li a:hover {
+	background: #EEE;
+}
