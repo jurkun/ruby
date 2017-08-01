@@ -22,7 +22,7 @@
 
 /* 2. COMMON */
 /* 2.1 HEADER */
-body>header{position:fixed;z-index:6;top:0;left:0;width:100%;height:50px;padding-top:5px;background:#D5D5D5;color:#666;box-shadow:0 1px 1px #CCC}
+body>header{position:fixed;z-index:6;top:0;left:0;width:100%;height:50px;padding-top:5px;background:#F5F5F5;color:#666;box-shadow:0 1px 1px #CCC}
 body>header a{color:#333}
 header .menu-toggle{position:absolute;z-index:1;display:block;top:5px;left:5px;width:40px;height:40px;line-height:40px;border-radius:3px;background:#EEE;color:#666;text-align:center;text-decoration:none;font-size:20px}
 header .menu-toggle i{line-height:40px}

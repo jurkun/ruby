@@ -19,7 +19,7 @@ code {background:#DDD}
 .table-default .filter-item{border:1px solid #EEE;background:#F5F5F5;color:#333}
 .table-default .filter-item:focus{background:#FFF}
 
-body>header{background:#D5D5D5;color:#666;box-shadow:0 1px 1px #999}
+body>header{background:#F5F5F5;color:#666;box-shadow:0 1px 1px #999}
 body>header a{color:#333}
 header .menu-toggle{background:#EEE;color:#666}
 body.toggle>header .menu-toggle,header .menu-toggle:hover{background:#DDD;color:#E0115F}

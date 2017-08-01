@@ -4,7 +4,7 @@
  *
  */
 
-.switch-theme{position:absolute;z-index:2;top:0;right:0;display:block;height:30px;line-height:30px;padding:0 10px;border-radius:0 0 0 3px;text-decoration:none}
+.switch-theme{position:absolute;z-index:99;top:0;right:0;display:block;height:30px;line-height:30px;padding:0 10px;border-radius:0 0 0 3px;text-decoration:none}
 .switch-theme:hover{text-decoration:none}
 .lock-wrapper{position:absolute;z-index:2;width:100%;min-height:200px;top:50%;left:0;right:0;margin:-120px auto 0;padding:20px 20px 20px 40px}
 	@media (min-width: 600px) {
